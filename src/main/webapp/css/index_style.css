@@ -1,0 +1,109 @@
+
+body {
+  /*background: url(../img/ironbank2.0.jpg) 0% 0% no-repeat;*/
+  background-size: cover;
+
+}
+
+.head {
+  position: center;
+  width: 100vw;
+}
+
+.flex-header {
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px;
+
+}
+
+.logo {
+  background-image: url(../img/Iron-Bank-logo.png);
+  display: block;
+  width: 30px;
+  height: 24px;
+
+}
+
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 48px;
+
+
+}
+
+
+.title_1 {
+font-size: 28px;
+font-weight: 700;
+padding-bottom: 8px;
+
+}
+
+
+.title_2 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 32px;
+
+}
+
+
+
+.dropbtn {
+  background-color: transparent;
+    color: #232323;
+    padding-right: 48px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 148px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+
+}
+
+
+.dropdown-content a {
+  color: #232323;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #484848;
+  color: #fff;
+}
+
+
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

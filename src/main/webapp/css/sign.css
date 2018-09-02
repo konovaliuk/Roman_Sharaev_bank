@@ -1,0 +1,237 @@
+body {
+    background-color: #FDFDFD;
+}
+
+*.logo {
+  position: absolute;
+  /*background-image: url();*/
+  display: block;
+  width: 30px;
+  height: 24px;
+  left: 48px;
+  top: 36px;
+
+}
+.head {
+    position: fixed;
+    width: 100vw;
+}
+
+.flex-header {
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 48px;
+
+}
+
+.logo {
+    background-image: url(../img/bw-logo.svg);
+    display: block;
+    width: 30px;
+    height: 24px;
+
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #232323;
+    padding-right: 48px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 148px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+
+}
+
+
+.dropdown-content a {
+    color: #232323;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #484848;
+    color: #fff;
+}
+
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.title_1 {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+
+
+/*Форма*/
+
+form {
+    text-transform: uppercase;
+    width: 480px;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-size: 14px;
+    color: #AAADB3;
+    margin: 0;
+}
+
+
+.signin_info label {
+    color: #232323;
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 24px;
+
+}
+
+.signin_info input {
+    background: #fff;
+    color: #232323;
+    border: 1px solid #232323;
+    padding: 12px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+input:focus {
+    border: 1px solid #171717;
+    outline: none;
+}
+
+.signin_action {
+    margin-top: 8px;
+}
+
+/*Стиль Чекбоксов*/
+
+.container {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.container:hover {
+    color: #FF5A00;
+    transition: .4s;
+}
+
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*Конец стиля чекбоксов*/
+
+/*Конец формы*/
+
+
+/*Расположение блоков*/
+
+.flex-conteiner {
+    height: 100vh;
+    display: flex;
+}
+
+.sign_in_form {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin_picture {
+    background: url(../img/sign_up.jpg) center no-repeat;
+    background-size: cover;
+    width: 35%;
+}
+
+
+.signin_footer {
+    position: absolute;
+    left: 48px;
+    bottom: 48px;
+}
+
+/*Конец расположению блоков*/
+
+
+.sign_title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.link {
+    color: #FF5A00;
+    text-decoration: none;
+}
+.link:hover {
+    color: #FF8B4C;
+    transition: .4s;
+}

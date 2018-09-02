@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/iron</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    <jsp-config>
+        <taglib>
+            <taglib-uri>roman.ironbank.tag</taglib-uri>
+            <taglib-location>/WEB-INF/tag.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <!--<servlet>-->
+        <!--<servlet-name>Controller</servlet-name>-->
+        <!--<servlet-class>roman.ironbank.controller.MainController</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Controller</servlet-name>-->
+        <!--<url-pattern>/controller</url-pattern>-->
+        <!--<url-pattern>/register</url-pattern>-->
+        <!--<url-pattern>/admin</url-pattern>-->
+        <!--<url-pattern>/login</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<filter>-->
+        <!--<filter-name>PageRedirectFilter</filter-name>-->
+        <!--<filter-class>roman.ironbank.controller.util.filter.PageRedirectFilter</filter-class>-->
+        <!--<init-param>-->
+            <!--<param-name>INDEX_PATH</param-name>-->
+            <!--<param-value>/index.jsp</param-value>-->
+        <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>PageRedirectFilter</filter-name>-->
+        <!--<url-pattern>/*/</url-pattern>-->
+        <!--<servlet-name>Controller</servlet-name>-->
+    <!--</filter-mapping>-->
+    <!--<context-param>-->
+        <!--<param-name>PARAMETER_ENCODING</param-name>-->
+        <!--<param-value>/index.jsp</param-value>-->
+    <!--</context-param>-->
+
+</web-app>
+
